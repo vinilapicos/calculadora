@@ -1,0 +1,99 @@
+body{
+    overflow: hidden;
+    background: linear-gradient(rgb(189, 227, 245), white);
+}
+.container{
+
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    width: 370px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #e9e9e9;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+#inputUsuario{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 5px;
+    background: whitesmoke;
+    text-align: right;
+    direction: ltr;
+    outline: none;
+    border: none;
+}
+
+.btn, .btnoper{
+    width: 24%;
+    height: 45px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+}
+.btn{
+    background: whitesmoke;
+}
+#soma{
+    background: #53c9f8;
+}
+#sub{
+    background: #75d3f8
+}
+#mult{
+    background: #9cdcf5
+}
+#divi{
+    background: #bbecff
+}
+
+#soma:hover{
+    background: #53c9f8b9;
+    cursor: pointer;
+}
+#sub:hover{
+    background: #75d3f8af;
+    cursor: pointer;
+}
+#mult:hover{
+    background: #9cdcf5b4;
+    cursor: pointer;
+}
+#divi:hover{
+    background: #bbecffb7;
+    cursor: pointer;
+}
+.btnIgual{
+    width: 99.2%;
+    height: 45px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+}
+.btn:hover, .btnIgual:hover{
+    background-color: rgba(128, 128, 128,0.2);
+    cursor: pointer;
+}
+
+
+@media(max-width:480px){
+    .btn{
+        width: 23.4%;
+    }
+}
+@media(max-width:320px){
+    .btn{
+        width: 23%;
+    }
+}
